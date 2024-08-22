@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Geeks</title>
+    <link rel="stylesheet" href="css/style.css">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+        body{
+            box-sizing: border-box;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Young Serif', serif;
+            background: url('images/fitness-1882721_1280.jpg');
+            background-size: 110%;
+        }
+        .left{
+            position: absolute;
+            left: 12px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid white; */
+        }
+        .left img{
+            width: 180px;
+            margin-left: 5px;
+        }
+        .left div{
+            text-align: center;
+            line-height: 25px;
+            font-size: 29px;
+        }
+        .mid{
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+            /* border: 2px solid white; */
+        }
+        .right{
+            position: absolute;
+            right: 12px;
+            top: 20px; 
+            display: inline-block;
+            /* border: 2px solid white; */
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            font-size: 30px;
+            color: aliceblue;
+            margin: 10px;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .navbar li a:hover{
+            color: rgb(148, 159, 155);
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            margin: 12px;
+            padding: 6px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: rgb(148, 159, 155);
+        }
+
+        .container{
+            border: 5px solid white;
+            margin: 160px 80px;
+            padding: 12px;
+            border-radius: 12px;
+            width: 33%;
+        }
+        .form-group input{
+        width: 230px;
+        display: block;
+        text-align: center;
+        border:3px solid #000000c7;
+        margin: 0px auto;
+        font-size: 15px;
+        border-radius: 10px;
+        font-family: 'Young Serif', serif;
+        }
+        .container button{
+            display: block;
+            width: 230px;
+            margin: 12px auto; 
+        }
+        .container h2{
+            text-align: center;
+        }
+
+      </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/weight-1399281_1280.png" alt="">
+            <div>Fitness Geeks</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Timing</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best Gym of Jalandhar.</h2>
+        <form action="backend.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name"> <br>
+                <input type="text" placeholder="Enter your Age"> <br>
+                <input type="text" placeholder="Enter your Address"><br>
+                <input type="text" placeholder="Enter your Phone number"><br>
+                <input type="text" placeholder="Enter your Email"><br>
+              <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
